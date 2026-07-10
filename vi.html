@@ -1,0 +1,336 @@
+<title>CV - Huynh Nhat Phi</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root, :root[data-theme="dark"], :root[data-theme="light"] {
+    --bg: #ffffff;
+    --text: #111111;
+    --muted: #555555;
+    --border: #cccccc;
+    --link: #1a4f91;
+    --section-rule: #999999;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #555555;
+      --border: #cccccc;
+      --link: #1a4f91;
+      --section-rule: #999999;
+    }
+  }
+
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 40px 64px;
+  }
+
+  .cv-name {
+    font-size: 22pt;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .cv-title {
+    font-size: 11pt;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .lang-switch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 9.5pt;
+    margin-bottom: 14px;
+  }
+  .lang-switch a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  .lang-switch a:hover { text-decoration: underline; }
+  .lang-switch .active {
+    color: var(--text);
+    font-weight: bold;
+  }
+  .cv-contact {
+    font-size: 9.5pt;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0;
+    margin-bottom: 26px;
+  }
+  .cv-contact a { color: var(--link); text-decoration: none; }
+  .cv-contact a:hover { text-decoration: underline; }
+
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 9.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    border-bottom: 1px solid var(--section-rule);
+    padding-bottom: 3px;
+    margin-bottom: 11px;
+  }
+
+  .summary { font-size: 10.5pt; }
+
+  .exp-entry { margin-bottom: 16px; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .exp-role { font-weight: bold; font-size: 10.5pt; }
+  .exp-dates { font-size: 9.5pt; color: var(--muted); white-space: nowrap; }
+  .exp-company { font-size: 10pt; color: var(--muted); margin-bottom: 5px; }
+  .exp-sub { font-weight: bold; font-size: 10pt; margin: 6px 0 3px; }
+  .exp-bullets { padding-left: 18px; font-size: 10.5pt; }
+  .exp-bullets li { margin-bottom: 3px; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 6px 12px;
+    font-size: 10.5pt;
+  }
+  .skill-label { font-weight: bold; }
+  .skill-val { color: var(--muted); }
+
+  .project-entry { margin-bottom: 15px; }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+  .project-name { font-weight: bold; font-size: 10.5pt; }
+  .project-tools { font-size: 9.5pt; color: var(--muted); }
+  .project-bullets { padding-left: 18px; font-size: 10.5pt; }
+  .project-bullets li { margin-bottom: 3px; }
+
+  .soft-skills {
+    display: flex;
+    gap: 8px 28px;
+    flex-wrap: wrap;
+    font-size: 10.5pt;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 28px 18px 48px; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .exp-header, .project-header { flex-direction: column; }
+  }
+  @media print {
+    body { padding: 20px 24px; font-size: 10pt; }
+    .cv-name { font-size: 18pt; }
+  }
+</style>
+
+<div class="cv-name">Huynh Nhat Phi</div>
+<div class="cv-title">Data Analyst</div>
+
+<div class="lang-switch">
+  <a href="index.html">English</a>
+  <span>|</span>
+  <span class="active">Tiếng Việt</span>
+</div>
+
+<div class="cv-contact">
+  <span>&#9990; 0337 564 532 &middot; 0328 648 255 (Zalo)</span>
+  <span>&#9993; <a href="mailto:phihuynhdata@gmail.com">phihuynhdata@gmail.com</a></span>
+  <span>&#128279; <a href="https://github.com/PhiHuynh-2212" target="_blank">github.com/PhiHuynh-2212</a></span>
+  <span>&#128205; Quận 9, Thành phố Hồ Chí Minh</span>
+</div>
+
+<div class="section">
+  <div class="section-title">Giới Thiệu</div>
+  <div class="summary">
+    Tôi là Data Analyst với hơn 2 năm kinh nghiệm làm việc với dữ liệu trong các lĩnh vực ngân hàng, bán lẻ, nhân sự và tổng đài. Tôi cũng có kinh nghiệm làm Trợ giảng Phân tích dữ liệu, nơi tôi hỗ trợ học viên trong quá trình học và áp dụng kiến thức phân tích dữ liệu. Tôi có kinh nghiệm xây dựng dashboard, làm sạch dữ liệu và phân tích dữ liệu để tìm ra những insight hữu ích phục vụ cho quyết định kinh doanh. Tôi cũng sử dụng các công cụ AI để làm việc nhanh hơn và hiệu quả hơn, như tạo báo cáo, phân tích dữ liệu, xử lý vấn đề và cải thiện quy trình dữ liệu. Tôi đang tìm kiếm một vị trí Data Analyst toàn thời gian để tiếp tục học hỏi, phát triển và hỗ trợ doanh nghiệp đưa ra quyết định tốt hơn dựa trên dữ liệu.
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Kinh Nghiệm Làm Việc</div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Data Analyst &mdash; IDB Group (International Distribution Corporation)</span>
+      <span class="exp-dates">01/2026 &ndash; 06/2026</span>
+    </div>
+    <div class="exp-company">Toàn thời gian &middot; Thành phố Hồ Chí Minh</div>
+    <ul class="exp-bullets">
+      <li>Phân tích dữ liệu log cuộc gọi từ hệ thống 3CX VoIP và Auto Dialer để phục vụ báo cáo kinh doanh cho các khách hàng lớn trong lĩnh vực ngân hàng và F&amp;B như Techcombank, Vietcombank, Golden Gate và nhiều đối tác khác</li>
+      <li>Xây dựng dashboard theo dõi các chỉ số hiệu suất tổng đài như số lượng cuộc gọi, tỷ lệ bắt máy và năng suất của điện thoại viên</li>
+      <li>Làm việc trực tiếp với khách hàng để thu thập yêu cầu nghiệp vụ và chuyển hóa thành các giải pháp dữ liệu rõ ràng</li>
+      <li>Chuẩn hóa luồng dữ liệu và xây dựng pipeline đồng bộ từ OLTP sang OLAP để đảm bảo tính chính xác và nhất quán của dữ liệu</li>
+      <li>Ứng dụng công cụ AI để tăng tốc quá trình phát triển dashboard, thiết kế giao diện, tạo template, phân tích chỉ số và xử lý lỗi trong báo cáo cũng như đồng bộ dữ liệu OLTP-OLAP</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Data Analyst &mdash; FPT Retail</span>
+      <span class="exp-dates">08/2024 &ndash; 12/2025</span>
+    </div>
+    <div class="exp-company">Toàn thời gian &middot; Thành phố Hồ Chí Minh</div>
+    <ul class="exp-bullets">
+      <li>Phân tích dữ liệu tiêm chủng, dược phẩm và hành vi người dùng từ ứng dụng và website Long Châu để phục vụ báo cáo nội bộ và theo dõi hiệu quả kinh doanh</li>
+      <li>Phát triển và tự động hóa dashboard cho khối Kinh doanh và Nhân sự</li>
+      <li>Thu thập, chuẩn hóa và phân tích dữ liệu thị trường nhằm hỗ trợ các kế hoạch mở rộng kinh doanh như xe điện, đồng hồ và dịch vụ xét nghiệm y tế</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Trợ Giảng &mdash; Vy Lê Training</span>
+      <span class="exp-dates">08/2024 &ndash; 12/2025</span>
+    </div>
+    <div class="exp-company">Bán thời gian &middot; Thành phố Hồ Chí Minh</div>
+    <ul class="exp-bullets">
+      <li>Hỗ trợ giảng viên trong các khóa học Data Analyst, bao gồm Power BI, Excel, Power Automate và Data Storytelling</li>
+      <li>Hỗ trợ học viên đến từ nhiều nhóm khác nhau như khách hàng doanh nghiệp, nhân viên văn phòng, giảng viên đại học và sinh viên trong việc áp dụng kiến thức và công cụ phân tích dữ liệu</li>
+      <li>Xây dựng pipeline dữ liệu và hệ thống báo cáo nội bộ bao gồm học viên, khóa học, giáo trình, phản hồi và các chiến dịch của công ty</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Data Analyst &mdash; Transform Group</span>
+      <span class="exp-dates">01/2024 &ndash; 06/2024</span>
+    </div>
+    <div class="exp-company">Thực tập sinh &rarr; Toàn thời gian &middot; Thành phố Hồ Chí Minh</div>
+
+    <div class="exp-sub">Thực tập:</div>
+    <ul class="exp-bullets">
+      <li>Làm sạch và tổ chức dữ liệu thô để sẵn sàng cho phân tích</li>
+      <li>Hỗ trợ xây dựng dashboard bằng Shukuajing và Lakebase</li>
+    </ul>
+
+    <div class="exp-sub">Chính thức:</div>
+    <ul class="exp-bullets">
+      <li>Tự xây dựng và duy trì các dashboard phân tích</li>
+      <li>Làm việc với dữ liệu khách hàng và dữ liệu tổng đài trong lĩnh vực ngân hàng và tài chính</li>
+      <li>Hỗ trợ triển khai dịch vụ LakeSuite cho các khách hàng bán lẻ và thương mại như CellphoneS, 7-Eleven và AEON Mall</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Dự Án</div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Phân Tích Điểm Thi THPT Quốc Gia Việt Nam &nbsp;<a href="https://github.com/PhiHuynh-2212/Diem_Thi_THPT_2025" target="_blank" style="font-weight:normal; font-size:9.5pt;">(Xem dự án)</a></span>
+      <span class="project-tools">Python &middot; Tableau &middot; Statistics</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Phân tích điểm thi của hơn 5 triệu học sinh trên toàn quốc từ năm 2020 đến 2024</li>
+      <li>Nghiên cứu mối liên hệ giữa điểm số và tổ hợp môn mà học sinh lựa chọn</li>
+      <li>Xây dựng dashboard tương tác để thể hiện các xu hướng và kết quả nổi bật qua từng năm</li>
+      <li>Dự đoán số lượng thí sinh và mức điểm kỳ vọng cho kỳ thi năm 2025</li>
+    </ul>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Country Indicators Dashboard &nbsp;<a href="https://github.com/PhiHuynh-2212/Country-Indicators-Dashboard" target="_blank" style="font-weight:normal; font-size:9.5pt;">(Xem dự án)</a></span>
+      <span class="project-tools">Python &middot; Power BI</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Làm việc với dữ liệu phát triển toàn cầu từ năm 1960 đến 2024 của nhiều quốc gia trên thế giới</li>
+      <li>Xây dựng dashboard cho phép người dùng so sánh các chỉ số quan trọng giữa các quốc gia và khu vực</li>
+    </ul>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Phân Tích Doanh Thu Rạp Chiếu Phim &mdash; Data Talent 2023 &nbsp;<a href="https://drive.google.com/drive/folders/17JPlxJDXrt--Lki7iRzQ08p9G6rf46cR?usp=drive_link" target="_blank" style="font-weight:normal; font-size:9.5pt;">(Xem dự án)</a></span>
+      <span class="project-tools">Python &middot; Tableau &middot; Statistics</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Phân tích dữ liệu bán vé của một rạp chiếu phim tại Đà Nẵng trong tháng 3/2023</li>
+      <li>Xây dựng dashboard tổng hợp và trình bày insight rõ ràng nhằm hỗ trợ doanh nghiệp cải thiện hiệu quả kinh doanh</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Kiến Thức Kỹ Thuật</div>
+  <div class="skills-grid">
+    <span class="skill-label">Ngôn ngữ</span>
+    <span class="skill-val">SQL, Python</span>
+
+    <span class="skill-label">Cơ sở dữ liệu quan hệ</span>
+    <span class="skill-val">MySQL, SQL Server, PostgreSQL, Azure SQL</span>
+
+    <span class="skill-label">Cơ sở dữ liệu NoSQL</span>
+    <span class="skill-val">MongoDB</span>
+
+    <span class="skill-label">Công cụ lập lịch</span>
+    <span class="skill-val">Apache Airflow</span>
+
+    <span class="skill-label">Xử lý dữ liệu</span>
+    <span class="skill-val">Excel (Pivot Table, Power Query), Google Sheets, Pandas, NumPy, PySpark</span>
+
+    <span class="skill-label">Trực quan hóa dữ liệu</span>
+    <span class="skill-val">Tableau, Power BI, Looker, Matplotlib, Excel, Google Sheets</span>
+
+    <span class="skill-label">Công cụ AI</span>
+    <span class="skill-val">ChatGPT, Claude, Copilot &mdash; ứng dụng trong phát triển dashboard, thiết kế báo cáo, phân tích chỉ số và xử lý lỗi pipeline dữ liệu</span>
+
+    <span class="skill-label">Vibe Coding</span>
+    <span class="skill-val">Cursor, Claude Code, OpenCode, Codex, Antigravity, GitHub Copilot</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Kỹ Năng Kỹ Thuật</div>
+  <ul class="exp-bullets">
+    <li>Xây dựng hạ tầng dữ liệu, pipeline phân tích thời gian thực từ data lake đến data warehouse và các công cụ analytics từ đầu</li>
+    <li>Phát triển dashboard trực quan, phân tích dữ liệu bằng calculated fields và metrics, xây dựng embedded analytics bằng Power BI, Tableau và các dịch vụ cloud khác</li>
+    <li>Tạo các báo cáo nhanh bằng Excel hoặc Google Sheets với các hàm xử lý dữ liệu, pivot table và biểu đồ</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title">Kỹ Năng Mềm</div>
+  <div class="soft-skills" style="flex-direction: column; gap: 4px;">
+    <span>Tư duy phân tích</span>
+    <span>Tư duy thống kê</span>
+    <span>Giao tiếp rõ ràng</span>
+    <span>Giao tiếp với khách hàng và stakeholder</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Học Vấn</div>
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">FPT Polytechnic</span>
+      <span class="exp-dates">08/2023 &ndash; 08/2025</span>
+    </div>
+    <div class="exp-company">Xử lý dữ liệu</div>
+    <ul class="exp-bullets">
+      <li>GPA: 3.58 / 4.0</li>
+    </ul>
+  </div>
+</div>
