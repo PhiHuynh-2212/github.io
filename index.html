@@ -1,0 +1,321 @@
+<title>CV - Huynh Nhat Phi</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root, :root[data-theme="dark"], :root[data-theme="light"] {
+    --bg: #ffffff;
+    --text: #111111;
+    --muted: #555555;
+    --border: #cccccc;
+    --link: #1a4f91;
+    --section-rule: #999999;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #555555;
+      --border: #cccccc;
+      --link: #1a4f91;
+      --section-rule: #999999;
+    }
+  }
+
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 40px 64px;
+  }
+
+  .cv-name {
+    font-size: 22pt;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .cv-title {
+    font-size: 11pt;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .cv-contact {
+    font-size: 9.5pt;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0;
+    margin-bottom: 26px;
+  }
+  .cv-contact a { color: var(--link); text-decoration: none; }
+  .cv-contact a:hover { text-decoration: underline; }
+
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 9.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    border-bottom: 1px solid var(--section-rule);
+    padding-bottom: 3px;
+    margin-bottom: 11px;
+  }
+
+  .summary { font-size: 10.5pt; }
+
+  .exp-entry { margin-bottom: 16px; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .exp-role { font-weight: bold; font-size: 10.5pt; }
+  .exp-dates { font-size: 9.5pt; color: var(--muted); white-space: nowrap; }
+  .exp-company { font-size: 10pt; color: var(--muted); margin-bottom: 5px; }
+  .exp-sub { font-weight: bold; font-size: 10pt; margin: 6px 0 3px; }
+  .exp-bullets { padding-left: 18px; font-size: 10.5pt; }
+  .exp-bullets li { margin-bottom: 3px; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 6px 12px;
+    font-size: 10.5pt;
+  }
+  .skill-label { font-weight: bold; }
+  .skill-val { color: var(--muted); }
+
+  .project-entry { margin-bottom: 15px; }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+  .project-name { font-weight: bold; font-size: 10.5pt; }
+  .project-tools { font-size: 9.5pt; color: var(--muted); }
+  .project-bullets { padding-left: 18px; font-size: 10.5pt; }
+  .project-bullets li { margin-bottom: 3px; }
+
+  .soft-skills {
+    display: flex;
+    gap: 8px 28px;
+    flex-wrap: wrap;
+    font-size: 10.5pt;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 28px 18px 48px; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .exp-header, .project-header { flex-direction: column; }
+  }
+  @media print {
+    body { padding: 20px 24px; font-size: 10pt; }
+    .cv-name { font-size: 18pt; }
+  }
+</style>
+
+<div class="cv-name">Huynh Nhat Phi</div>
+<div class="cv-title">Data Analyst</div>
+
+<div class="cv-contact">
+  <span>&#9990; 0337 564 532 &middot; 0328 648 255 (Zalo)</span>
+  <span>&#9993; <a href="mailto:phihuynhdata@gmail.com">phihuynhdata@gmail.com</a></span>
+  <span>&#128279; <a href="https://github.com/PhiHuynh-2212" target="_blank">github.com/PhiHuynh-2212</a></span>
+  <span>&#128205; District 9, Ho Chi Minh City</span>
+</div>
+
+<!-- ABOUT ME -->
+<div class="section">
+  <div class="section-title">About Me</div>
+  <div class="summary">
+    I am a Data Analyst with over 2 years of experience. I have worked with data in banking, retail, and human resources. I am good at building dashboards, cleaning data, and turning numbers into clear, useful insights. I also use AI tools regularly to speed up my work — from building dashboards and designing report templates to analyzing metrics, fixing bugs, and improving data pipelines. I am currently working as a Data Analysis Teaching Assistant and I am looking for a full-time Data Analyst role where I can keep growing.
+  </div>
+</div>
+
+<!-- WORK EXPERIENCE -->
+<div class="section">
+  <div class="section-title">Work Experience</div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Data Analyst &mdash; IDB Group (International Distribution Corporation)</span>
+      <span class="exp-dates">Jan 2026 &ndash; Jun 2026</span>
+    </div>
+    <div class="exp-company">Full-time &middot; Ho Chi Minh City</div>
+    <ul class="exp-bullets">
+      <li>Analyzed call log data from 3CX VoIP and Auto Dialer systems to support business reporting for major banking and F&amp;B clients including Techcombank, Vietcombank, Golden Gate, and others</li>
+      <li>Built dashboards to track call center performance metrics such as call volume, answer rate, and agent productivity</li>
+      <li>Worked directly with clients to gather business requirements and translate them into clear data solutions</li>
+      <li>Standardized data flows and built sync pipelines from OLTP to OLAP systems to ensure data accuracy and consistency</li>
+      <li>Applied AI tools to speed up dashboard development, UI design, template creation, metric analysis, and bug fixing in reports and OLTP-OLAP data sync</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Data Analyst &mdash; FPT Retail</span>
+      <span class="exp-dates">Aug 2024 &ndash; Dec 2025</span>
+    </div>
+    <div class="exp-company">Full-time &middot; Ho Chi Minh City</div>
+    <ul class="exp-bullets">
+      <li>Analyzed vaccination, pharmaceutical, and user behavior data from the Long Ch&acirc;u mobile app and website to support internal reporting and business performance tracking</li>
+      <li>Developed and automated dashboards for Business and Human Resources teams</li>
+      <li>Collected, standardized, and analyzed market data to support business expansion initiatives including electric vehicles, watches, and medical testing services</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Teaching Assistant &mdash; Vy L&ecirc; Training</span>
+      <span class="exp-dates">Aug 2024 &ndash; Dec 2025</span>
+    </div>
+    <div class="exp-company">Part-time &middot; Ho Chi Minh City</div>
+    <ul class="exp-bullets">
+      <li>Assisted instructors in delivering Data Analyst training courses, including Power BI, Excel, Power Automate, and Data Storytelling</li>
+      <li>Supported learners from diverse backgrounds &mdash; corporate clients, office professionals, university lecturers, and students &mdash; in applying data analysis concepts and tools</li>
+      <li>Built data pipelines and an internal reporting system covering students, courses, curriculum, feedback, and company campaigns</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">Data Analyst &mdash; Transform Group</span>
+      <span class="exp-dates">Jan 2024 &ndash; Jun 2024</span>
+    </div>
+    <div class="exp-company">Intern &rarr; Full-time &middot; Ho Chi Minh City</div>
+
+    <div class="exp-sub">Internship:</div>
+    <ul class="exp-bullets">
+      <li>Cleaned and organized raw data to make it ready for analysis</li>
+      <li>Helped build dashboards using Shukuajing and Lakebase</li>
+    </ul>
+
+    <div class="exp-sub">Full-time:</div>
+    <ul class="exp-bullets">
+      <li>Built and maintained analytical dashboards independently</li>
+      <li>Worked with customer data and call center data in the banking and finance sector</li>
+      <li>Supported LakeSuite service delivery for retail and commercial clients including CellphoneS, 7-Eleven, and AEON Mall</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+  <div class="section-title">Projects</div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Vietnam National High School Exam Score Analysis &nbsp;<a href="https://github.com/PhiHuynh-2212/Diem_Thi_THPT_2025" target="_blank" style="font-weight:normal; font-size:9.5pt;">(View project)</a></span>
+      <span class="project-tools">Python &middot; Tableau &middot; Statistics</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Analyzed exam scores of over 5 million students across Vietnam from 2020 to 2024</li>
+      <li>Studied the link between scores and subject combinations chosen by students</li>
+      <li>Built an interactive dashboard to show key trends and results over the years</li>
+      <li>Predicted the number of students and expected scores for the 2025 exam</li>
+    </ul>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Country Indicators Dashboard &nbsp;<a href="https://github.com/PhiHuynh-2212/Country-Indicators-Dashboard" target="_blank" style="font-weight:normal; font-size:9.5pt;">(View project)</a></span>
+      <span class="project-tools">Python &middot; Power BI</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Worked with global development data from 1960 to 2024 for countries around the world</li>
+      <li>Built a dashboard that lets users compare key indicators across countries and regions</li>
+    </ul>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Cinema Sales Analysis &mdash; Data Talent 2023 &nbsp;<a href="https://drive.google.com/drive/folders/17JPlxJDXrt--Lki7iRzQ08p9G6rf46cR?usp=drive_link" target="_blank" style="font-weight:normal; font-size:9.5pt;">(View project)</a></span>
+      <span class="project-tools">Python &middot; Tableau &middot; Statistics</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Analyzed movie ticket sales data from a cinema in Da Nang during March 2023</li>
+      <li>Built a summary dashboard and shared clear findings to help the business improve</li>
+    </ul>
+  </div>
+</div>
+
+<!-- TECHNICAL KNOWLEDGES -->
+<div class="section">
+  <div class="section-title">Technical Knowledges</div>
+  <div class="skills-grid">
+    <span class="skill-label">Programming</span>
+    <span class="skill-val">SQL, Python</span>
+
+    <span class="skill-label">Relational Databases</span>
+    <span class="skill-val">MySQL, SQL Server, PostgreSQL, Azure SQL</span>
+
+    <span class="skill-label">NoSQL Databases</span>
+    <span class="skill-val">MongoDB</span>
+
+    <span class="skill-label">Jobs Scheduler</span>
+    <span class="skill-val">Apache Airflow</span>
+
+    <span class="skill-label">Data Processing</span>
+    <span class="skill-val">Excel (Pivot Table, Power Query), Google Sheets, Pandas, NumPy, PySpark</span>
+
+    <span class="skill-label">Data Visualization</span>
+    <span class="skill-val">Tableau, Power BI, Looker, Matplotlib, Excel, Google Sheets</span>
+
+    <span class="skill-label">AI Tools</span>
+    <span class="skill-val">ChatGPT, Claude, Copilot — applied in dashboard development, report design, metric analysis, and data pipeline debugging</span>
+
+    <span class="skill-label">Vibe Coding</span>
+    <span class="skill-val">Cursor, Claude Code, OpenCode, Codex, Antigravity, GitHub Copilot</span>
+  </div>
+</div>
+
+<!-- TECHNICAL SKILLS -->
+<div class="section">
+  <div class="section-title">Technical Skills</div>
+  <ul class="exp-bullets">
+    <li>Developing data infrastructure, real-time analytics data pipelines from data lakes to data warehouses and analytics tools from scratch</li>
+    <li>Developing visualizations, analyzing data using calculated fields and metrics, developing embedded analytics dashboards using Power BI, Tableau, and other cloud services</li>
+    <li>Quick ad-hoc reports with Excel / Google Sheets applying data transforming functions, pivot tables, and charts</li>
+  </ul>
+</div>
+
+<!-- SOFT SKILLS -->
+<div class="section">
+  <div class="section-title">Soft Skills</div>
+  <div class="soft-skills" style="flex-direction: column; gap: 4px;">
+    <span>Analytical thinking</span>
+    <span>Statistical thinking</span>
+    <span>Clear communication</span>
+    <span>Client-facing &amp; stakeholder communication</span>
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+  <div class="section-title">Education</div>
+  <div class="exp-entry">
+    <div class="exp-header">
+      <span class="exp-role">FPT Polytechnic</span>
+      <span class="exp-dates">Aug 2023 &ndash; Aug 2025</span>
+    </div>
+    <div class="exp-company">Data Processing</div>
+    <ul class="exp-bullets">
+      <li>GPA: 3.58 / 4.0</li>
+    </ul>
+  </div>
+</div>
